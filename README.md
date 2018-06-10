@@ -1,5 +1,7 @@
 # idea-add-resource-issue
 
+IDEA issue: https://youtrack.jetbrains.com/issue/IDEA-193681
+
 This repo illustrates an issue with IntelliJ IDEA's handling of the following `build-helper-maven-plugin` declarations at the following locations:
 
 * https://github.com/matthewadams/idea-add-resource-issue/blob/master/Bar/pom.xml#L41
