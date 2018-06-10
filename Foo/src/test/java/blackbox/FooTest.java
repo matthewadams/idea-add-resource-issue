@@ -13,7 +13,7 @@ import java.time.ZoneOffset;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class BlackBoxTest {
+public class FooTest {
 
     @Test
     public void testSharedTestSource() {
