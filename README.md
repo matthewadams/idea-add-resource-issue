@@ -7,7 +7,7 @@ This repo illustrates an issue with IntelliJ IDEA's handling of the following `b
 
 It appears as though the IDE is not honoring the plugin's request to `add-resource`.
 
-Steps to reproduce:
+## Steps to reproduce:
 1. Clone this repository
 1. Although the repo is a multimodule maven project, _do not_ build the project via maven.
 1. Open the project in IDEA by opening the `pom.xml` _in the root directory of the repo_ using IDEA.  (I used the command line `idea pom.mxl`.)
