@@ -1,9 +1,13 @@
 package blackbox;
 
 import dummy.DateTimeTestUtils;
+import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
+import java.nio.charset.Charset;
 import java.time.Instant;
 import java.time.ZoneOffset;
 
@@ -21,8 +25,8 @@ public class BlackBoxTest {
     }
 
     @Test
-    public void testLoadResource() {
-        InputStream stream = getClass().getClassLoader().getResourceAsStream("bar.json");
-        assertNotNull(stream);
+    public void testLoadResource() throws IOException {
+        String s = IOUtils.resourceToString("/bar.json", Charset.forName("UTF-8"));
+        assertEquals("\"bar\"", s);
     }
 }
